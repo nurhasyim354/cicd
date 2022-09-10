@@ -1,2 +1,8 @@
-# cicd
-CI/CD example using NodeJs, ExpressJS, Jenkins, and Docker
+# Development
+
+To start the environment, execute:
+
+$ docker-compose up -d
+
+
+

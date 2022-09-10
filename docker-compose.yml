@@ -1,0 +1,19 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jenkins
+    build: ./jenkins
+    ports:
+      - '8080:8080'
+    volumes:
+      - 'jenkins_volume:/jenkins_home'
+      - '/var/run/docker.sock:/var/run/docker.sock'
+
+  scmapi:
+    container_name: scmapi1
+    build: ./scm-test
+    ports:
+      - "8083:8083"
+volumes:
+  jenkins_volume:
+    driver: local

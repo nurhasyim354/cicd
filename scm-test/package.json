@@ -1,0 +1,38 @@
+{
+  "name": "scm-test",
+  "version": "1.0.0",
+  "description": "sample node app to fulfil SCM activity",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "jest --runInBand",
+    "coverage": "nyc --reporter=html --reporter=text mocha",
+    "lint": "eslint src/** test/**",
+    "lint:fix": "eslint src/** test/** --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitraisnurhasyim/scm-test.git"
+  },
+  "author": "muhammadnur.hasyim@mitrais.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitraisnurhasyim/scm-test/issues"
+  },
+  "homepage": "https://github.com/mitraisnurhasyim/scm-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.4",
+    "eslint": "^8.0.0",
+    "jest": "^27.2.5",
+    "nyc": "^15.1.0",
+    "sinon": "^11.1.2",
+    "sinon-chai": "^3.7.0",
+    "superagent": "^6.1.0",
+    "supertest": "^6.1.6"
+  }
+}
